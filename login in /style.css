@@ -1,4 +1,4 @@
-* {
+ * {
     margin: 0;
     padding: 0;
     
@@ -16,147 +16,209 @@
     background-size: cover;
     width: 100%;
     }
-    
-    .box{
-    width: 400px;
-    height: 450px;
-    border: 2px solid  #524848;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    backdrop-filter: blur(15px);
-    background: transparent ;
-    box-shadow: rgba(172, 38, 172, 0.3) -5px 5px, rgba(172, 38, 172, 0.3) -10px 10px, rgba(172, 38, 172, 0.2) -15px 15px, rgba(172, 38, 172, 0.1) -20px 20px, rgba(172, 38, 172, 0.05) -25px 25px;
-    box-shadow: #000 0px 20px 30px -10px;
-    }
-    
-    h2{
-    font-size: 2em;
-    color: rgba(177,151,239,255);
-    text-align: center;
-    }
-    
-    .inputbox{
-    position: relative; 
-    margin: 30px 0;
-    width: 300px;
-    border-bottom: 2px solid rgba(177,151,239,255);
-    }
-    
-    .inputbox label{
-    position: absolute ;
-    top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
-    color: rgba(177,151,239,255) ;
-    font-size: 1em ;
-    pointer-events: none;
-    transition: 0.5s;
-    }
-    
-    input:focus ~ label{
-    top: -5px;
-    }
-    
-    input:focus ~ label{
-    top: -5px;
-    }
-    
-    .inputbox input{
-    width: 100%;
-    height: 50px;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 1em;
-    padding: 0 35px 0 5px;
-    color: ##e911a8;
-    }
-    
-    .inputbox ion-icon{
-    position: absolute;
-    right: 8px;
-    color: rgba(177,151,239,255);
-    font-size: 1.2em;
-    top: 20px;
-    }
-    
-    
-    button{
-    width: 100%;
-    height: 40px;
-    border-radius: 40px;
-    background-color:rgba(177,151,239,255);
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 1.3em;
-    font-weight: 700;
-    }
-    
-    .forget{
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 0 15px;
-    font-size: 0.9em;
-    color: rgba(177,151,239,255);
-    }
-    
-    .forget label:nth-child(2){
-    order: 1;
-    }
-    
-    .forget label{
-    display: flex;
-    align-items: center;
-    }
-    
-    .forget label input[ type="checkbox"]{
-    margin-right: 6px
-    }
-    
-    .forget label a {
-    color: rgba(177,151,239,255);
-    text-decoration: none;
-    }
-    
-    .forget label a:hover{
-    text-decoration: underline;
-    }
-     
-    #source-link {
-        top: 10px;
-        }
-          #source-link1 {
-        top: 60px;
-        }
-       .meta-link {
-        align-items: center;
-        backdrop-filter: blur(3px);
-        background-color: #b406060d;
 
-        border: 1px solid rgba(150, 14, 105, 0.1);
-        border-radius: 6px;
-        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-        cursor: pointer;  
-        display: inline-flex;
-        gap: 5px;
-        left: 10px;
-        padding: 10px 20px;
-        position: fixed;
-        text-decoration: none;
-        transition: background-color 600ms, border-color 600ms;
-        z-index: 10000;
-        }
-      
-    
-    #myVideo {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -1; /* Place the video behind other elements */
+.login_content, .loginform, .login_inputs {
+    display: grid;
+  }
+  .login__content {
+    position: relative;
+    height: 100vh;
+    align-items: center;
+  }
+  .login__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .login__form {
+    position: relative;
+    background-color: hsla(244, 16%, 92%, 0.6);
+    border: 2px solid hsla(244, 16%, 92%, 0.75);
+    margin-inline: 1.5rem;
+    row-gap: 1.25rem;
+    backdrop-filter: blur(20px);
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+  .login__title {
+    color: var(--title-color);
+    font-size: var(--h2-font-size);
+    margin-bottom: 0.5rem;
+  }
+  .login__title span {
+    color: var(--first-color);
+  }
+  .login__description {
+    font-size: var(--small-font-size);
+  }
+  .login__inputs {
+    row-gap: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+  .login__label {
+    display: block;
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: 0.25rem;
+  }
+  .login__input {
+    width: 100%;
+    padding: 14px 12px;
+    border-radius: 6px;
+    border: 2px solid var(--text-color);
+    background-color: hsla(244, 16%, 92%, 0.6);
+    color: var(--title-color);
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-medium);
+    transition: border 0.4s;
+  }
+  .login__input::placeholder {
+    color: var(--text-color);
+  }
+  .login_input:focus, .login_input:valid {
+    border: 2px solid var(--first-color);
+  }
+  .login__box {
+    position: relative;
+  }
+  .login_box .login_input {
+    padding-right: 36px;
+  }
+  .login__eye {
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    right: 0.75rem;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+  .login__check {
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: center;
+  }
+  .login__check-input {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--text-color);
+    background-color: hsla(244, 16%, 92%, 0.2);
+    border-radius: 0.25rem;
+  }
+  
+  .login__buttons {
+    display: flex;
+    column-gap: 0.75rem;
+  }
+  .login__button {
+    width: 100%;
+    padding: 14px 2rem;
+    border-radius: 6px;
+    background: linear-gradient(180deg, var(--first-color), var(--second-color));
+    color: #fff;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    box-shadow: 0 6px 24px hsla(244, 75%, 48%, 0.5);
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  
+  .login__forgot {
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--first-color);
+    text-decoration: none;
+  }
+  #source-link {
+    top: 10px;
     }
+#source-link1 {
+    top: 60px;    
+     }           
+    
+  
+.meta-link {
+    align-items: center;
+    backdrop-filter: blur(3px);
+    background-color: #b406060d;
+
+    border: 1px solid rgba(150, 14, 105, 0.1);
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;  
+    display: inline-flex;
+    gap: 5px;
+    left: 10px;
+    padding: 10px 20px;
+    position: fixed;
+    text-decoration: none;
+    transition: background-color 600ms, border-color 600ms;
+    z-index: 10000;
+    }
+  
+
+#myVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Place the video behind other elements */
+}
+ 
+/* /=============== GOOGLE FONTS ===============/ */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/* /=============== VARIABLES CSS ===============/ */
+:root {
+  /* /========== Colors ==========/ */
+  /* /Color mode HSL(hue, saturation, lightness)/ */
+  --first-color: hsl(244, 75%, 57%);
+  --second-color: hsl(249, 64%, 47%);
+  --title-color: hsl(244, 12%, 12%);
+  --text-color: hsl(244, 4%, 36%);
+  --body-color: hsl(208, 97%, 85%);
+  /* /========== Font and typography ==========/ */
+  /* /.5rem = 8px | 1rem = 16px .../ */
+  --body-font: "Poppins", sans-serif;
+  --h2-font-size: 1.25rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+  /* /========== Font weight ==========/ */
+  --font-medium: 500;
+  --font-semi-bold: 600;
+}
+@media screen and (min-width: 1024px) {
+  :root {
+    --h2-font-size: 1.75rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--body-color);
+  font-family: var(--body-font);
+  color: var(--text-color);
+}
+
+input,
+button {
+  font-family: var(--body-font);
+  border: none;
+  outline: none;
+}
