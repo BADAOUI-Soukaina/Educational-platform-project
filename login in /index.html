@@ -3,58 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test1</title>
-    <link rel="stylesheet" href="xx.css">
- </head>
+    <title>Document</title>
+    <link rel="stylesheet" href="uu.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
 <body>
     <video id="myVideo" autoplay muted loop  >
         <source src="vidback3.mp4" type="video/mp4">
         <source src="vidback3.mp4" type="video/webm">
          
     </video>
-    <div class="box">
+        <div class="container">
+            <div class="login__content">
+                <img src="login-bg.png" alt="login image" class="login__img">
 
-        <form action="">
+                <form action="" class="login__form">
+                    <div>
+                        <h1 class="login__title">
+                            <span>ENSAH-CONNECT</span> 
+                        </h1>
+                        <p class="login__description">
+                            Bienvenue! Veiullez vous connecter pour continuer.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <div class="login__inputs">
+                            <div>
+                                <label for="input-email" class="login__label">Identifiant</label>
+                                <input type="email" placeholder="Saisir votre CNE" required class="login__input" id="input-email">
+                            </div>
+    
+                            <div>
+                                <label for="input-pass" class="login__label">Mot de passe</label>
+    
+                                <div class="login__box">
+                                    <input type="password" placeholder="Saisir votre mot de passe" required class="login__input" id="input-pass">
+                                    <i class="ri-eye-off-line login__eye" id="input-icon"></i>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                    <div>
+                        <div class="login__buttons">
+                            <button class="login__button">Se connecter</button>
+                           
+                        </div>
 
-            <h2>Login Here</h2>
-
-            <div class="inputbox">
-                <ion-icon name="mail-outline"></ion-icon>
-                <input type="email" name="" id="" required>
-                <label for="">Email:</label>
+                        <a href="#" class="login__forgot">Mot de passe oublié?</a>
+                    </div>
+                </form>
             </div>
-
-            <div class="inputbox">
-                <ion-icon name="lock-closed-outline"></ion-icon>
-                <input type="password" name="" id="" required>
-                <label for="">Password:</label>
-            </div>
-
-            <div class="forget">
-                <label for="">
-                    <input type="checkbox">Remember me
-                </label>
-                <label for="">
-                    Forget Password
-                </label>
-            </div>
-            <button> Log In</button>
-            
-
-             
-        </form>
-    </div>
+        </div>
+        <!--=============== MAIN JS ===============-->
+        <script src="main.js"></script>
+        <a id="source-link" class="meta-link" href="https://ensah.ma/" target="_blank">
+            <i class="fas fa-link"></i>
+            <span class="roboto-mono">site ENSA-H </span>
+        </a>
+        <a id="source-link1" class="meta-link" href="https://www.google.com/maps/place/%C3%89cole+nationale+des+sciences+appliqu%C3%A9es+d'Alhoceima/@35.1727096,-3.8620479,15z/data=!4m6!3m5!1s0xd742cdef50e1b29:0x19897f71ba224d93!8m2!3d35.1727096!4d-3.8620479!16s%2Fm%2F0m0jx64?entry=ttu" target="_blank">
+            <i class="fas fa-link"></i>
+            <span class="roboto-mono">location ENSA-H </span>
+        </a>
 
 
 
-      <!--Social Liks -->
-      <a id="source-link" class="meta-link" href="https://ensah.ma/" target="_blank">
-        <i class="fas fa-link"></i>
-        <span class="roboto-mono">site ENSA-H </span>
-    </a>
-<a id="source-link1" class="meta-link" href="https://www.google.com/maps/place/%C3%89cole+nationale+des+sciences+appliqu%C3%A9es+d'Alhoceima/@35.1727096,-3.8620479,15z/data=!4m6!3m5!1s0xd742cdef50e1b29:0x19897f71ba224d93!8m2!3d35.1727096!4d-3.8620479!16s%2Fm%2F0m0jx64?entry=ttu" target="_blank">
-        <i class="fas fa-link"></i>
-        <span class="roboto-mono">location ENSA-H </span>
-    </a>
-</body>
+
+    </body>
 </html>
