@@ -139,7 +139,7 @@ thead th {
     position: sticky;
     top: 0;
     left: 0;
-    background-color: #cb9ecf;
+    background-color: #f2d1f7;
     cursor: pointer;
     text-transform: capitalize;
 }
@@ -180,8 +180,8 @@ tbody tr.hide td img {
     height: 0;
     transition: .2s ease-in-out .5s;
 }
-
-.status {
+/*couleurs pour V / R  */
+/* .status {
     padding: .4rem 0;
     border-radius: 2rem;
     text-align: center;
@@ -205,7 +205,7 @@ tbody tr.hide td img {
     background-color: #6fcaea;
 }
 
-
+ */
 @media (max-width: 1000px) {
     td:not(:first-of-type) {
         min-width: 12.1rem;
